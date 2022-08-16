@@ -7,12 +7,14 @@
 
   <body>
     <h1>Formularios</h1>
-    <form>
+    <form action="registro-formulario.html"
+    method="post">
       <label>Nombre:</label>
 
       <input type="text"
-      maxlength="5"
-      size="5">
+      maxlength="50"
+      size="50"
+      name="nombre">
      
       <label>Password:</label>
       <input type="password" 
@@ -23,8 +25,10 @@
 
     </form>
     <h1>Formularios 2 </h1>
-<form>
-    <ul>
+<form action="registro-formulario.html"
+      method="post">
+  
+  <ul>
         
     <input type="checkbox"
     value="Musica">
@@ -42,11 +46,57 @@
     <input type="radio"
     value="A"
     name="opciones">
+    
+     
 
+    <input type="submit" 
+    value="Enviar">
 </ul>
     
-
 </form>
+
+  <form>
+    <table>
+      <tr>
+        <td>
+          Nombre:
+        </td>
+        <td>
+          <input name="nombre"
+            type="text"
+             >
+        </td>
+     </tr>
+       <tr>
+          <td>
+            Fecha de nacimiento
+          </td>
+          <td>
+            <input name="nombre"
+            type="date"
+            min="16-08-2022"
+            max="18-08-2022">
+          </td>
+
+
+       </tr>
+         
+       <tr>
+        <td>
+          Edad:
+        </td>
+        <td>
+          <input name="nombre"
+          type="number"  min="1" max="150" step="2">
+        </td>
+     </tr>
+       
+    </table>
+
+  </form>
+
+
+
  <hr>
   <a href="index.html">
     Volver
