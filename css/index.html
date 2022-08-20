@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 1 forma de usar css -->
+    <style>
+        /* esto es un comentari todo lo que escriba aca debe ser css */
+     
+
+        p {
+            color:rgb(43, 226, 67);
+            font-size: 30px;
+
+        }
+            /* estructura
+            selector{
+                propiedad:valor
+       
+            }
+            /*
+           
+      /*hasta aca*/
+       .otraclaseconfondoverde{
+        background-color:green;
+ 
+       }
+
+       section {
+        background-color: gold;
+
+
+       }
+
+       /*por id */
+       .btn{
+
+        background-color: rgb(255, 123, 0);
+       }
+
+
+    </style>
+
+<!--
+    2- forma :externo
+-->
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <main>
+    <!--aplicar estilos en linea 
+    usando el atributo style
+-->
+
+<section class="sectionPrincipal">
+    <h1 style="color:rgb(255, 115, 0)">Css</h1>
+    <h1 style="color:rgb(25, 0, 255)">subtitulo</h1>
+
+    <h2>soy un nuevo titulo</h2>
+
+    <p>
+       <b>Lorem</b>  ipsum dolor sit amet consectetur adipisicing elit.
+         Eaque quos asperiores ut corporis dicta adipisci error qui?
+          Dolores, ut molestias at repudiandae beatae odit porro in et cumque.
+           Veritatis, inventore.
+    </p>
+</section>
+
+<section class="otraclaseconfondoverde" >
+<p>hola</p>
+
+</section >
+
+<section>
+   <form action="alta.html">
+       <label for="nombre" >Nombre</label>
+       <input id="nombre" type="text" maxlength="50" required >
+
+       <button class="btn">
+        enviar
+       </button>
+       <button class="btn">
+        enviar 2
+       </button>
+
+
+   </form>
+
+</section>
+
+
+   </main>
+</body>
+</html>
