@@ -1,0 +1,47 @@
+/*selector de etiqueta*/
+p{
+    font-family: 'Roboto', sans-serif;
+
+
+}
+/*
+body{
+
+    background-color: blueviolet;
+}
+
+*/
+
+/*quiero que todos tengan la misma fuente */
+* {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+/*herencia*/
+/*
+section {
+
+    background-color: aqua;
+}
+*/
+
+.html {
+
+    background-color: yellow importan;
+}
+
+main section.html{
+
+    background-color: brown;
+}
+/*especificidad*/
+
+/*style > etiqueta */
+
+#idjs {
+
+    color: blue;
+    text-transform: lowercase;
+
+}
