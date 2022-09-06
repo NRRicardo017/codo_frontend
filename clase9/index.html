@@ -96,6 +96,37 @@
 
             color: aqua;
         }
+        table {
+            border: 1px solid red;
+            border-spacing: 0px;
+            width: 500px;
+            padding: 5px;
+        }
+        table tr{
+           text-align: center;
+           height: 30px;
+
+        }
+        table tr:first-child {
+
+            background-color: aqua;
+        }
+
+        /*colores en impares*/
+        table tr:nth-child(2n+3){
+            background-color: blue;
+        }
+
+        table tr:nth-child(2n){
+       background-color: red;
+   }
+
+   table tr:hover {
+     font-size: 1.2em;
+     font-weight: bolder;
+     color: white;
+
+   }
 
 
 
@@ -175,22 +206,27 @@
 
     <table>
         <tr>
-            <td> </td>
+            <th>col1</th>
+            <th>col2</th>
         </tr>
         <tr>
-            <td></td>
+            <td>f1 col1</td>
+            <td>f1 col2</td>
         </tr>
         <tr>
-            <td></td>
+            <td>f2 col1</td>
+            <td>f2 col2</td>
         </tr>
         <tr>
-            <td></td>
+            <td>f3 col1</td>
+            <td>f3 col2</td>
         </tr>
         <tr>
-            <td></td>
+            <td>f4 col1</td>
+            <td>f4 col2</td>
         </tr>
     </table>
- 
-
-</body>
+        
+    
+    </body>
 </html>
