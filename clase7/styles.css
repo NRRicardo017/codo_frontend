@@ -1,0 +1,74 @@
+/*selector de etiqueta*/
+p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+body{
+
+    background-color: blueviolet;
+}
+
+*/
+
+/*quiero que todos tengan la misma fuente */
+* {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+/*herencia*/
+
+main .html {
+
+    background-color: aqua;
+}
+
+
+
+section {
+
+    background-color: brown;
+}
+/*especificidad*/
+
+/*style > etiqueta */
+
+/*tiene que se */
+#idjs {
+
+    color: black;
+    text-transform: lowercase;
+
+}
+/*tiene que contener*/
+[id*=ss] {
+
+
+}
+
+/*que empiece con*/
+[id^=html] {
+
+
+}
+
+/*termine con*/
+[id$=java] {
+
+
+
+}
+
+#htmlid
+
+/*especificidad */
+/*
+1-!iomportant
+2-inline
+3-class
+4-etiqueta
+
+*/

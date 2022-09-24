@@ -1,0 +1,98 @@
+
+.container {
+    display:block;
+    background-color: aqua;
+    padding: 5px;
+}
+
+.container div{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+}
+
+/*flex*/
+.container-flex {
+    display:flex;
+    background-color: coral;
+    padding: 3px;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 250px;
+    flex-wrap: wrap;/* si el contenido supera el tamaño del conteiner , se pone al ultimo*/
+    align-items: center;
+}
+
+.container-flex div {
+    margin: 2px;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    text-align: center;
+    
+}
+
+.flex-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* media query, sirve para cambiar estilos en determinados resoluciones*/
+@media screen and (max-width:600px){
+    .container-flex{
+        flex-direction: column;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+  
+}
+section {
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+}
+
+.context-text {
+
+
+}
+section img {
+    height: 40%;
+}
+
+
+html{
+
+    scroll-behavior: smooth;
+}
+section:first-child {
+    background-image: linear-gradient(to top,red 0%, blue 10 %, );
+}
+
+section a{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 25px;
+}
+
+section a:hover {
+    font-weight: border;
+   
+}
+section a:active {
+    opacity: 0.5;
+}
