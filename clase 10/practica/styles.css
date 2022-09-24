@@ -58,6 +58,88 @@ por defecto en los flex estan en modo row en fila */
     padding: 0;
     box-sizing:border-box ;
 }
+
+.menu-container{
+    display: flex;
+    background-color: rgb(25, 125, 143);
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-left: 10px;
+
+}
+
+.menu-container ul {
+ list-style-type: none;
+
+
+}
+
+.menu-container ul li{
+    display: inline-block;
+    padding: 5px;
+     
+}
+/*
+.menu-container ul a {
+    height: 40px;
+    width: 60px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 15px ;
+    background-color: rgb(179, 30, 216) ;
+    color: white;
+    font-size: 1.2em;
+}
+*/
+
+.menu-container a{
+ text-decoration: none;
+ padding: 5px;
+ color: #2af598; 
+
+
+}
+.menu-container ul a {
+    height: 40px;
+    width: 60px;
+    display: inline-block;
+    text-decoration: none;
+    color: #2af598;
+}
+menuitem {
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+header nav {
+    position: sticky;
+    top: 0;
+}
+header img{
+    width: 100%;
+    height: 650px;
+    
+}
+
+aside nav {
+    position: sticky;
+    top: 0;
+
+}
+
+aside img{
+    width: 100%;
+    height: 650px;
+}
+
+
+
+
 section {
     height: 650px;
     display: flex;
