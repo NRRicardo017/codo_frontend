@@ -1,0 +1,85 @@
+
+header{
+    display: flex;
+    background-color: #1b2127;
+    color:white;
+    align-items: center;
+
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+header figure{
+    margin: 0;
+
+}
+
+.menu-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 50px;
+padding-left: 10px;
+
+}
+.menu-container ul li{
+    display: inline-block;
+    padding: 5px;
+}
+
+.menu-container ul a {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menuitem {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.baires{
+    color:white;
+    height: 500px;
+    background-image:url("/trabajopractico integrador/ba1.jpg") ;
+    background-size:100%  500px;
+    background-repeat: no-repeat;
+
+  /*  background-color: aqua;*/
+
+}
+
+.baires h1.p{
+    font-size: 20px;
+
+}
+
+.baires{
+ display: flex;
+ justify-content: end;
+ text-align: end;
+
+
+
+
+
+
+}
