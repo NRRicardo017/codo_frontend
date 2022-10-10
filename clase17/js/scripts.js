@@ -78,11 +78,43 @@ console.log(alumnosMenoresDe40);
 
 let existe = false;
 
-for (let i=0 ; i<alumnos.length;i++){
-    if(alumnos[i].edad === 25) {
+for (let i=0 ; i<alumnos.length && !existe;i++){
+    if(alumnos[i].edad === 60) {
         existe = true;
-        break; //corta el ciclo for
+        //break; //corta el ciclo for
     }
 }
 
-console.log('existe?: ', existe);
+console.log('existe la edad 60?: ', existe); 
+
+//some ()> boolean (true|false):expresion lambda 
+const existeAlumno25 = alumnos.some(alumno => alumno.edad === 30);
+console.log('existe la edad 30?: ',existeAlumno25);
+
+// TODOS LOS ALUMNOS TIENEN UNA EDAD X
+let todos= true;
+
+for (let i=0 ; i<alumnos.length && todos;i++){
+    todos= alumnos[i].edad === 35;// true or false
+}
+console.log('todos: ', todos);
+
+//evert: lambda >boolean
+
+const todos2= alumnos.every(alumno => alumno.edad ===35);
+console.log('todos', todos2);
+
+//quiero los nobres de los alumnos
+const nombres= [];
+for (let alumno of alumnos) {
+    nombres.push(alumno.nombre);
+}
+console.log('nombres: ',nombres);
+
+//map:f(x) <otro algo
+const nombresMap = alumnos.map(alumno => alumno.nombre);//que quiero?
+console.log('nombresMap: ',nombresMap)
+
+// reduce
+const sumaReduce = alumnos.reduce((acum,actual)=> acum +actual.edad ,0)//que quiero?
+console.log('sumaReduced: ',sumaReduce);
